@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+
+  <script>
+    // Correct usage: Convert the object to a string first
+    const myObject = { message: "Hello!" };
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject); 
+  </script>
+</body>
+</html>
